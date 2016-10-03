@@ -1,0 +1,50 @@
+apply plugin: 'android'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion '21.1.0'
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 19
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE'
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.firebase:firebase-client-android:2.2.4+'
+    compile 'com.facebook.android:facebook-android-sdk:3.23.1'
+//    compile project(':facebook')
+    compile 'com.google.android.gms:play-services:6.1.+'
+    compile 'org.twitter4j:twitter4j-core:4.0.2'
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.android.support:appcompat-v7:22.1.1'
+    compile 'com.squareup.okhttp:okhttp:1.5.4@jar'
+    compile 'com.github.shell-software:fab:1.0.5'
+    compile 'com.jpardogo.materialtabstrip:library:1.0.9'
+    compile 'com.kbeanie:image-chooser-library:1.4.3@aar'
+    compile 'de.hdodenhof:circleimageview:1.2.2'
+    compile 'com.rengwuxian.materialedittext:library:2.1.3'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
+
+}

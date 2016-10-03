@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/color_base_0"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="70dip"
+    android:gravity="left|center"
+    android:padding="5dp">
+    <ImageView
+        android:id="@+id/img_contactlist"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="fill_parent">
+        <TextView
+            android:id="@+id/tv_contactlist_displayname"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textSize="28dip"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="20dip"
+            android:textColor="@color/color_base_e"
+            />
+
+        <LinearLayout
+            android:layout_width="50dip"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical">
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="30dip"
+                android:layout_height="30dip" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

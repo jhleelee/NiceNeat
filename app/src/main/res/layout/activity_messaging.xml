@@ -1,0 +1,125 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/wrapper_message"
+    android:fitsSystemWindows="true"
+    tools:context=".MessagingActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_i"
+            android:background="@color/color_base_d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@android:color/transparent"
+                >
+                <ImageView
+                    android:id="@+id/iv_ic"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="left"
+                    android:layout_width="48dip"
+                    android:layout_height="48dip"
+                    android:background="@android:color/transparent"
+                    android:layout_margin="1dip"
+                    android:src="@drawable/ic_actionbar"
+                    />
+                <TextView
+                    android:id="@+id/iv_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:textColor="@android:color/white"
+                    android:layout_toRightOf="@id/iv_ic"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:text="Nice n' neat"
+                    android:textSize="@dimen/fontsize_usual"
+                    android:textStyle="bold"
+                    />
+                <ImageButton android:id="@+id/iv_img"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent"
+                    android:src="@drawable/ic_action_search"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:visibility="gone"/>
+                <EditText android:id="@+id/iv_field"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/iv_img"
+                    android:layout_toRightOf="@id/iv_text"
+                    android:background="#ff00c78c"
+                    android:padding="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:hint="@string/search"
+                    android:visibility="gone"
+                    android:text=""/>
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    </FrameLayout>
+
+    <ListView
+
+            android:id="@+id/listview_messages"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="100"
+            android:transcriptMode="alwaysScroll"
+            android:layout_above="@+id/divider"
+            android:padding="0dip"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:stackFromBottom="true"
+            android:background="@color/color_base_0"
+            tools:listitem="@layout/message_left"/>
+    
+
+
+    <LinearLayout
+            android:id="@+id/relSendMessage"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            >
+
+
+        <EditText
+                android:windowSoftInputMode="adjustPan"
+                 android:id="@+id/edittext_input_message"
+                android:layout_width="0dip"
+                android:layout_weight="100"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dip"
+                android:textSize="20sp"
+                android:textColor="@color/color_base_e"
+                android:layout_marginRight="10dp"
+                 android:background="@android:color/white"
+                />
+
+        <Button
+                android:text="@string/button_send_message"
+                android:textColor="@color/white"
+                android:textSize="12dip"
+                android:id="@+id/button_send_message"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:background="@drawable/button_send_message" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background_color">#fff</color>
+    <color name="login_background_color">#444</color>
+
+    <color name="color_base">#00ab6c</color>
+    <!--<color name="color_base">#76d1d1</color>-->
+
+    <color name="color_base_e">#257A3c</color>
+    <color name="color_base_d">#3b9859</color>
+    <color name="color_base_c">#6db484</color>
+    <color name="color_base_b">#afd4bd</color>
+    <color name="color_base_a">#d8eadf</color>
+    <color name="color_base_0">#eef4ee</color>
+
+
+
+
+    <color name="red_strong">#ffc1493a</color>
+    <color name="red__orange_style">#d53410</color>
+    <color name="red_middle">#ff4444</color>
+    <color name="red_mild">#ffff7e72</color>
+    <color name="red_very_mild">#ffffe6e8</color>
+
+    <color name="green_strong">#00a13b</color>
+    <color name="green_middle">#0dff61</color>
+    <color name="green_very_mild">#ffecfff1</color>
+
+
+    <color name="blue_strong">#0073ce</color>
+    <color name="blue_middle">#4fabff</color>
+    <color name="blue_style">#00709f</color>
+
+    <color name="blue_very_mild">#ffb1dbff</color>
+
+
+
+    <color name="yellow_strong">#fffd01</color>
+    <color name="yellow_middle">#fffd6b</color>
+    <color name="yellow_very_mild">#fffffed8</color>
+
+    <color name="ygreen_strong">#77a800</color>
+    <color name="ygreen_middle">#c0ff2b</color>
+    <color name="ygreen_very_mild">#fff6ffe2</color>
+
+    <color name="purple_strong">#9d00cf</color>
+    <color name="purple_middle">#cd62ff</color>
+    <color name="purple_very_mild">#fff4deff</color>
+
+    <color name="pink_strong">#fa00de</color>
+    <color name="pink_middle">#ff65ed</color>
+    <color name="pink_very_mild">#ffffdbfa</color>
+
+    <color name="cyan_strong">#00eee3</color>
+    <color name="cyan_middle">#66fff7</color>
+    <color name="cyan_very_mild">#ffe5fffd</color>
+
+    <color name="orange_strong">#ff9900</color>
+    <color name="orange_middle">#ffae4e</color>
+    <color name="orange_very_mild">#ffffedd8</color>
+
+    <color name="white">#ffffff</color>
+    <color name="ultra_light_grey">#fff9fdf7</color>
+
+    <color name="very_light_grey">#f0f0f0</color>
+    <color name="more_light_grey">#d7d7d7</color>
+
+    <color name="light_grey">#bcbcbc</color>
+    <color name="middle_grey">#898989</color>
+    <color name="dark_grey">#464646</color>
+
+    <color name="chungrok_1">#002828</color>
+    <color name="chungrok_2">#005050</color>
+    <color name="chungrok_3">#008282</color>
+    <color name="chungrok_4">#00b4b4</color>
+    <color name="chungrok_m">#136f82</color>
+
+</resources>

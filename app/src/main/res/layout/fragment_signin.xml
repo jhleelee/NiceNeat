@@ -1,0 +1,39 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/normal_padding"
+    android:weightSum="1">
+
+    <EditText
+        android:id="@+id/login_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/password_edittext"
+        android:layout_centerHorizontal="true"
+        android:capitalize="none"
+        android:hint="@string/login"
+        android:singleLine="true"/>
+
+    <EditText
+        android:id="@+id/password_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:capitalize="none"
+        android:hint="@string/password"
+        android:imeOptions="actionSend"
+        android:paddingBottom="10dp"
+        android:password="true"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_edittext"
+        android:layout_centerHorizontal="true"
+        android:text="@string/sign_in" />
+</RelativeLayout>

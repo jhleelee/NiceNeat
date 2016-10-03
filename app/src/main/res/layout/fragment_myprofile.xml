@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dip"
+        android:gravity="center"
+        android:layout_gravity="top"
+        android:id="@+id/linearLayout"
+        android:weightSum="1">
+
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="150dip"
+            android:layout_height="150dip"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:layout_margin="20dip"
+            android:background="@drawable/blank_profile"
+            android:layout_weight="0.05" />
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="400px"
+            android:layout_height="50dip"
+            android:id="@+id/fullname_textview"
+            android:layout_gravity="center"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="400px"
+            android:layout_height="50dip"
+            android:id="@+id/email_textview"
+            android:layout_gravity="center"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:orientation="horizontal"
+        android:alpha="0.5"
+        android:background="@color/color_base">
+
+        <Button
+            android:gravity="center"
+            android:layout_width="0dip"
+            android:layout_weight="50"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:text="@string/myprofile_below_setservice"
+            android:textColor="@color/white"
+            />
+
+        <View
+            android:layout_gravity="center"
+            android:layout_width="1dip"
+            android:layout_height="40dip"
+            android:background="@color/white"
+            ></View>
+
+        <Button
+            android:gravity="center"
+            android:layout_width="0dip"
+            android:layout_weight="50"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:text="@string/myprofile_below_logout"
+            android:textColor="@color/white"
+            android:id="@+id/logout_button" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

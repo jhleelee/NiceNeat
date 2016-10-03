@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:gravity="right"
+    android:layout_marginRight="5dip"
+
+    android:padding="10dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dip"
+        android:layout_weight="100"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AUTHOR"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:textColor="@color/color_base_e"
+            android:textStyle="bold"/>
+
+
+
+
+
+            <TextView
+                android:padding="12dp"
+                android:background="@color/color_base_c"
+
+                android:id="@+id/message"
+                    android:paddingRight="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:text="Hello, how are you?"
+                    />
+
+        <TextView
+            android:id="@+id/messagedate"
+            android:textColor="@color/color_base_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:paddingRight="2dp"
+            android:paddingBottom="6dp"
+            android:textSize="12sp"
+            android:text="2015.5.4. 12:32"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="5dip"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_gravity="top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="70dip"
+            android:layout_height="70dip" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Users/jaehaklee/Downloads/Niceneat%20-%20Restrat%20with%20Firebase/app/src/main/res/layout/message_right.xml -->

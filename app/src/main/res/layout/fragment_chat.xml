@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView
+        android:visibility="gone"
+        android:id="@+id/listview_chatrooms"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        />
+
+
+    <ListView
+        android:visibility="visible"
+        android:id="@+id/listview_invitebutton_friends_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue_middle"
+        />
+
+     <!--<ImageView-->
+        <!--android:orientation="vertical"-->
+        <!--android:id="@+id/iv_nothing_on_list"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:background="@color/white"-->
+        <!-->-->
+
+        <!--</ImageView>-->
+
+
+    <LinearLayout
+        android:visibility="gone"
+
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:orientation="horizontal"
+        android:alpha="0.5"
+        android:background="@color/fab_material_brown_500">
+
+        <Button
+            android:gravity="center"
+            android:layout_width="0dip"
+            android:layout_weight="50"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:text="@string/chat_up_oneone"
+            android:textColor="@color/white"
+            />
+
+        <View
+            android:layout_gravity="center"
+            android:layout_width="1dip"
+            android:layout_height="40dip"
+            android:background="@color/white"
+            ></View>
+
+        <Button
+             android:gravity="center"
+            android:layout_width="0dip"
+            android:layout_weight="50"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:text="@string/chat_up_group"
+            android:textColor="@color/white"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+            android:id="@+id/btn_panel_contactlist"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:orientation="horizontal"
+        android:alpha="0.5"
+        android:background="@color/color_base">
+
+        <Button
+            android:id="@+id/btn_chat_below_chat"
+            android:gravity="center"
+            android:layout_width="0dip"
+            android:layout_weight="50"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:text="@string/chat_below_chat"
+            android:textColor="@color/white"
+            />
+
+        <View
+            android:layout_gravity="center"
+            android:layout_width="1dip"
+            android:layout_height="40dip"
+            android:background="@color/white"
+            ></View>
+
+        <Button
+            android:id="@+id/btn_chat_below_friendlist"
+            android:gravity="center"
+            android:layout_width="0dip"
+            android:layout_weight="50"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:text="@string/chat_below_friendlist"
+            android:textColor="@color/white"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
